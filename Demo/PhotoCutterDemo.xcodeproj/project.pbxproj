@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B2537141D79766900E89EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2537131D79766900E89EF6 /* AppDelegate.swift */; };
+		3B2537161D79766900E89EF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2537151D79766900E89EF6 /* ViewController.swift */; };
+		3B2537191D79766900E89EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2537171D79766900E89EF6 /* Main.storyboard */; };
+		3B25371B1D79766900E89EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B25371A1D79766900E89EF6 /* Assets.xcassets */; };
+		3B25371E1D79766900E89EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B25371C1D79766900E89EF6 /* LaunchScreen.storyboard */; };
+		3B2537291D79766900E89EF6 /* PhotoCutterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2537281D79766900E89EF6 /* PhotoCutterDemoTests.swift */; };
+		3B25374C1D7977CF00E89EF6 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2537451D7977CF00E89EF6 /* cat.png */; };
+		3B25374E1D7977CF00E89EF6 /* IMG_1708.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2537471D7977CF00E89EF6 /* IMG_1708.jpg */; };
+		3B25374F1D7977CF00E89EF6 /* IMG_1710.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2537481D7977CF00E89EF6 /* IMG_1710.jpg */; };
+		3B2537501D7977CF00E89EF6 /* IMG_1720.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2537491D7977CF00E89EF6 /* IMG_1720.jpg */; };
+		3B2537511D7977CF00E89EF6 /* IMG_1736.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B25374A1D7977CF00E89EF6 /* IMG_1736.jpg */; };
+		3B2537521D7977CF00E89EF6 /* web_youhui.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B25374B1D7977CF00E89EF6 /* web_youhui.png */; };
+		3BFFDF291DBF657400C8D55D /* PhotoCutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFFDF281DBF657400C8D55D /* PhotoCutter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B2537251D79766900E89EF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B2537081D79766900E89EF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B25370F1D79766900E89EF6;
+			remoteInfo = PhotoCutterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B2537101D79766900E89EF6 /* PhotoCutterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCutterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2537131D79766900E89EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B2537151D79766900E89EF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B2537181D79766900E89EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B25371A1D79766900E89EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B25371D1D79766900E89EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B25371F1D79766900E89EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2537241D79766900E89EF6 /* PhotoCutterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoCutterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2537281D79766900E89EF6 /* PhotoCutterDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCutterDemoTests.swift; sourceTree = "<group>"; };
+		3B25372A1D79766900E89EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2537451D7977CF00E89EF6 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		3B2537471D7977CF00E89EF6 /* IMG_1708.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1708.jpg; sourceTree = "<group>"; };
+		3B2537481D7977CF00E89EF6 /* IMG_1710.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1710.jpg; sourceTree = "<group>"; };
+		3B2537491D7977CF00E89EF6 /* IMG_1720.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1720.jpg; sourceTree = "<group>"; };
+		3B25374A1D7977CF00E89EF6 /* IMG_1736.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1736.jpg; sourceTree = "<group>"; };
+		3B25374B1D7977CF00E89EF6 /* web_youhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_youhui.png; sourceTree = "<group>"; };
+		3BFFDF131DBDFFFB00C8D55D /* PhotoCutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotoCutter.framework; path = "PhotoCutter/build/Release-iphoneos/PhotoCutter.framework"; sourceTree = "<group>"; };
+		3BFFDF281DBF657400C8D55D /* PhotoCutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotoCutter.framework; path = "../../Library/Developer/Xcode/DerivedData/PhotoCutterDemo-aorcaqcyioezkobncwfwtuzliwon/Build/Products/Debug-iphonesimulator/PhotoCutter.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B25370D1D79766900E89EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFFDF291DBF657400C8D55D /* PhotoCutter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2537211D79766900E89EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B2537071D79766900E89EF6 = {
+			isa = PBXGroup;
+			children = (
+				3B2537121D79766900E89EF6 /* PhotoCutterDemo */,
+				3B2537271D79766900E89EF6 /* PhotoCutterDemoTests */,
+				3B2537111D79766900E89EF6 /* Products */,
+				3BFFDF121DBDFFFB00C8D55D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B2537111D79766900E89EF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B2537101D79766900E89EF6 /* PhotoCutterDemo.app */,
+				3B2537241D79766900E89EF6 /* PhotoCutterDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B2537121D79766900E89EF6 /* PhotoCutterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3B2537441D7977CF00E89EF6 /* Resource */,
+				3B2537131D79766900E89EF6 /* AppDelegate.swift */,
+				3B2537151D79766900E89EF6 /* ViewController.swift */,
+				3B2537171D79766900E89EF6 /* Main.storyboard */,
+				3B25371A1D79766900E89EF6 /* Assets.xcassets */,
+				3B25371C1D79766900E89EF6 /* LaunchScreen.storyboard */,
+				3B25371F1D79766900E89EF6 /* Info.plist */,
+			);
+			path = PhotoCutterDemo;
+			sourceTree = "<group>";
+		};
+		3B2537271D79766900E89EF6 /* PhotoCutterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B2537281D79766900E89EF6 /* PhotoCutterDemoTests.swift */,
+				3B25372A1D79766900E89EF6 /* Info.plist */,
+			);
+			path = PhotoCutterDemoTests;
+			sourceTree = "<group>";
+		};
+		3B2537441D7977CF00E89EF6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3B2537451D7977CF00E89EF6 /* cat.png */,
+				3B2537471D7977CF00E89EF6 /* IMG_1708.jpg */,
+				3B2537481D7977CF00E89EF6 /* IMG_1710.jpg */,
+				3B2537491D7977CF00E89EF6 /* IMG_1720.jpg */,
+				3B25374A1D7977CF00E89EF6 /* IMG_1736.jpg */,
+				3B25374B1D7977CF00E89EF6 /* web_youhui.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3BFFDF121DBDFFFB00C8D55D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BFFDF281DBF657400C8D55D /* PhotoCutter.framework */,
+				3BFFDF131DBDFFFB00C8D55D /* PhotoCutter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B25370F1D79766900E89EF6 /* PhotoCutterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B25372D1D79766900E89EF6 /* Build configuration list for PBXNativeTarget "PhotoCutterDemo" */;
+			buildPhases = (
+				3B25370C1D79766900E89EF6 /* Sources */,
+				3B25370D1D79766900E89EF6 /* Frameworks */,
+				3B25370E1D79766900E89EF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoCutterDemo;
+			productName = PhotoCutterDemo;
+			productReference = 3B2537101D79766900E89EF6 /* PhotoCutterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B2537231D79766900E89EF6 /* PhotoCutterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B2537301D79766900E89EF6 /* Build configuration list for PBXNativeTarget "PhotoCutterDemoTests" */;
+			buildPhases = (
+				3B2537201D79766900E89EF6 /* Sources */,
+				3B2537211D79766900E89EF6 /* Frameworks */,
+				3B2537221D79766900E89EF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B2537261D79766900E89EF6 /* PBXTargetDependency */,
+			);
+			name = PhotoCutterDemoTests;
+			productName = PhotoCutterDemoTests;
+			productReference = 3B2537241D79766900E89EF6 /* PhotoCutterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B2537081D79766900E89EF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Will;
+				TargetAttributes = {
+					3B25370F1D79766900E89EF6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+					3B2537231D79766900E89EF6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 3B25370F1D79766900E89EF6;
+					};
+				};
+			};
+			buildConfigurationList = 3B25370B1D79766900E89EF6 /* Build configuration list for PBXProject "PhotoCutterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B2537071D79766900E89EF6;
+			productRefGroup = 3B2537111D79766900E89EF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B25370F1D79766900E89EF6 /* PhotoCutterDemo */,
+				3B2537231D79766900E89EF6 /* PhotoCutterDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B25370E1D79766900E89EF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B25371E1D79766900E89EF6 /* LaunchScreen.storyboard in Resources */,
+				3B2537521D7977CF00E89EF6 /* web_youhui.png in Resources */,
+				3B2537501D7977CF00E89EF6 /* IMG_1720.jpg in Resources */,
+				3B25374E1D7977CF00E89EF6 /* IMG_1708.jpg in Resources */,
+				3B2537511D7977CF00E89EF6 /* IMG_1736.jpg in Resources */,
+				3B25371B1D79766900E89EF6 /* Assets.xcassets in Resources */,
+				3B25374C1D7977CF00E89EF6 /* cat.png in Resources */,
+				3B25374F1D7977CF00E89EF6 /* IMG_1710.jpg in Resources */,
+				3B2537191D79766900E89EF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2537221D79766900E89EF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B25370C1D79766900E89EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2537161D79766900E89EF6 /* ViewController.swift in Sources */,
+				3B2537141D79766900E89EF6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2537201D79766900E89EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2537291D79766900E89EF6 /* PhotoCutterDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B2537261D79766900E89EF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B25370F1D79766900E89EF6 /* PhotoCutterDemo */;
+			targetProxy = 3B2537251D79766900E89EF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B2537171D79766900E89EF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B2537181D79766900E89EF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B25371C1D79766900E89EF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B25371D1D79766900E89EF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B25372B1D79766900E89EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B25372C1D79766900E89EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B25372E1D79766900E89EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoCutter/build/Release-iphoneos",
+					"${TARGET_BUILD_DIR}/PhotoCutter.framework",
+				);
+				INFOPLIST_FILE = PhotoCutterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Huaxi100.PhotoCutterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3B25372F1D79766900E89EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoCutter/build/Release-iphoneos",
+					"${TARGET_BUILD_DIR}/PhotoCutter.framework",
+				);
+				INFOPLIST_FILE = PhotoCutterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Huaxi100.PhotoCutterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3B2537311D79766900E89EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhotoCutterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Huaxi100.PhotoCutterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoCutterDemo.app/PhotoCutterDemo";
+			};
+			name = Debug;
+		};
+		3B2537321D79766900E89EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhotoCutterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Huaxi100.PhotoCutterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoCutterDemo.app/PhotoCutterDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B25370B1D79766900E89EF6 /* Build configuration list for PBXProject "PhotoCutterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B25372B1D79766900E89EF6 /* Debug */,
+				3B25372C1D79766900E89EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B25372D1D79766900E89EF6 /* Build configuration list for PBXNativeTarget "PhotoCutterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B25372E1D79766900E89EF6 /* Debug */,
+				3B25372F1D79766900E89EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B2537301D79766900E89EF6 /* Build configuration list for PBXNativeTarget "PhotoCutterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2537311D79766900E89EF6 /* Debug */,
+				3B2537321D79766900E89EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B2537081D79766900E89EF6 /* Project object */;
+}
