@@ -19,7 +19,7 @@ class ViewController: UITableViewController {
         var height:Float
     }
     
-    let contents = ["cat.png","IMG_1710.jpg","IMG_1708.jpg","IMG_1736.jpg","IMG_1720.jpg"]
+    let contents = ["girl.jpg","IMG_1710.jpg","IMG_1708.jpg"]
     
     fileprivate var type:CutterType?
 
