@@ -18,8 +18,6 @@
 		3B25374F1D7977CF00E89EF6 /* IMG_1710.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2537481D7977CF00E89EF6 /* IMG_1710.jpg */; };
 		3B2537501D7977CF00E89EF6 /* IMG_1720.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B2537491D7977CF00E89EF6 /* IMG_1720.jpg */; };
 		3B2537511D7977CF00E89EF6 /* IMG_1736.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B25374A1D7977CF00E89EF6 /* IMG_1736.jpg */; };
-		3B2537521D7977CF00E89EF6 /* web_youhui.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B25374B1D7977CF00E89EF6 /* web_youhui.png */; };
-		3BFFDF291DBF657400C8D55D /* PhotoCutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFFDF281DBF657400C8D55D /* PhotoCutter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +29,19 @@
 			remoteInfo = PhotoCutterDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B96062F1E826C2F000622A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3B2537101D79766900E89EF6 /* PhotoCutterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCutterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +59,6 @@
 		3B2537481D7977CF00E89EF6 /* IMG_1710.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1710.jpg; sourceTree = "<group>"; };
 		3B2537491D7977CF00E89EF6 /* IMG_1720.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1720.jpg; sourceTree = "<group>"; };
 		3B25374A1D7977CF00E89EF6 /* IMG_1736.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1736.jpg; sourceTree = "<group>"; };
-		3B25374B1D7977CF00E89EF6 /* web_youhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_youhui.png; sourceTree = "<group>"; };
 		3BFFDF131DBDFFFB00C8D55D /* PhotoCutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotoCutter.framework; path = "PhotoCutter/build/Release-iphoneos/PhotoCutter.framework"; sourceTree = "<group>"; };
 		3BFFDF281DBF657400C8D55D /* PhotoCutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotoCutter.framework; path = "../../Library/Developer/Xcode/DerivedData/PhotoCutterDemo-aorcaqcyioezkobncwfwtuzliwon/Build/Products/Debug-iphonesimulator/PhotoCutter.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFFDF291DBF657400C8D55D /* PhotoCutter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +131,6 @@
 				3B2537481D7977CF00E89EF6 /* IMG_1710.jpg */,
 				3B2537491D7977CF00E89EF6 /* IMG_1720.jpg */,
 				3B25374A1D7977CF00E89EF6 /* IMG_1736.jpg */,
-				3B25374B1D7977CF00E89EF6 /* web_youhui.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 				3B25370C1D79766900E89EF6 /* Sources */,
 				3B25370D1D79766900E89EF6 /* Frameworks */,
 				3B25370E1D79766900E89EF6 /* Resources */,
+				3B96062F1E826C2F000622A2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B25371E1D79766900E89EF6 /* LaunchScreen.storyboard in Resources */,
-				3B2537521D7977CF00E89EF6 /* web_youhui.png in Resources */,
 				3B2537501D7977CF00E89EF6 /* IMG_1720.jpg in Resources */,
 				3B25374E1D7977CF00E89EF6 /* IMG_1708.jpg in Resources */,
 				3B2537511D7977CF00E89EF6 /* IMG_1736.jpg in Resources */,
