@@ -20,7 +20,9 @@
 * 1、获取裁剪控制器
 
 主要的裁剪控制器是```PhotoCutterViewController```，所以我们通过如下代码初始化一个裁剪控制器
-```let cutterViewController:PhotoCutterViewController = PhotoCutterViewController()```
+```
+let cutterViewController:PhotoCutterViewController = PhotoCutterViewController()
+```
 
 * 2、传入数据源
 数据源目前只支持传入```UIImage```类型的变量。设置方法如下：
@@ -41,6 +43,10 @@ cutterViewController.delegate?.didSuccesCutterPhoto = { (cutterView:PhotoCutterV
 }
 ```
 closure中的```resultImage```便是我们需要的结果。
+> 注意：
+这里的Delegate并不是使用@objc的protocol，所以我们不需要为```delegate```传入```self```，避免出现retain circle。在设置delegate的就直接上面的写的那样就可以了。
+
+可能你们会问为什么不直接在controller上使用closure，为什么非要添加一个delegate变量？第一、对于很多人来说使用delegate可能已经习惯了。第二、这里使用代理模式更符合场景需求。
 
 * 4、设置剪切形状
 同时支持圆形裁剪和矩形裁剪（宽高可以是不等的），我们可以通过设置```cutterType```属性来设置裁剪的类型。
