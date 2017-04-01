@@ -2,7 +2,7 @@
 ### 简介
 一款模仿QQ和微信头像裁剪的库，目前使用FrameWork集成。
 ### 效果
-[](/photo_cutter.gif)
+[](https://github.com/wangwangok/PhotoCutter/blob/master/photo_cutter.gif)
 ### 功能
 - 圆形裁剪（自定义矩形半径）
 - 矩形裁剪（自定义矩形宽高）
