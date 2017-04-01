@@ -11,11 +11,34 @@ import UIKit
 //关于open的解释最经典的一句话:"more public than public"
 //https://github.com/apple/swift-evolution/blob/master/proposals/0117-non-public-subclassable-by-default.md
 
+open class PhotoCutterViewControllerDelegate{
+    
+    public init() {
+        
+    }
+    
+    open var didSuccesCutterPhoto:((_ cutterView:PhotoCutterViewController , _ resultImage:UIImage?) -> Void)?
+    
+    fileprivate func cutterView(cutterView:PhotoCutterViewController, didCutterPhoto resultImage:UIImage?){
+        didSuccesCutterPhoto?(cutterView,resultImage)
+    }
+}
+
+
 open class PhotoCutterViewController: UIViewController {
     //MARK: - public Propertise-
     open var image:UIImage?
     
+    open var result:UIImage?
+    
+    open var isFilter:Bool = {
+        return true
+    }()
+    
     open var cutterType:CutterType = CutterType.circle(radius: 100)
+    
+    //MARK: - Delegate -
+    open var delegate:PhotoCutterViewControllerDelegate?
     
     //MARK: - private propertise -
     fileprivate var toolBar:PhotoToolBar = {
@@ -105,7 +128,12 @@ extension UISet{
     
     fileprivate func confirm(){
         let converPoint = cutterView.contentImageView.convert(cutterView.contentView.center, from: cutterView.contentView)
-        if let image = cutterView.cutter(converPoint){
+        guard let image = cutterView.cutter(converPoint) else {
+            return
+        }
+        result = image
+        delegate?.cutterView(cutterView: self, didCutterPhoto: result)
+        if isFilter {
             let filter = PhotoFilterViewController()
             filter.image = image
             if let navi = navigationController{
@@ -113,6 +141,8 @@ extension UISet{
             }else{
                 present(filter, animated: true, completion: nil)
             }
+        }else{
+            cancle()
         }
     }
     

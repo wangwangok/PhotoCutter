@@ -121,8 +121,8 @@
 				3B2536ED1D79763300E89EF6 /* CutterType.swift */,
 				3B2536EE1D79763300E89EF6 /* PCImageEditor.swift */,
 				3B2536EF1D79763300E89EF6 /* PhotoCutterView.swift */,
-				3B2536F01D79763300E89EF6 /* PhotoCutterViewController.swift */,
 				3B2536F11D79763300E89EF6 /* PhotoToolBar.swift */,
+				3B2536F01D79763300E89EF6 /* PhotoCutterViewController.swift */,
 			);
 			path = Cutter;
 			sourceTree = "<group>";
