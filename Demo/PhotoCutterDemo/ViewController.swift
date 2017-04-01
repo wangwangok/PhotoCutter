@@ -19,7 +19,16 @@ class ViewController: UITableViewController {
         var height:Float
     }
     
+<<<<<<< HEAD
     let contents = ["girl.jpg","IMG_1710.jpg","IMG_1708.jpg"]
+=======
+    let contents = ["cat.png",
+                    "web_youhui.png",
+                    "IMG_1710.jpg",
+                    "IMG_1708.jpg",
+                    "IMG_1736.jpg",
+                    "IMG_1720.jpg"]
+>>>>>>> 6e8313f475bfd6f5b92fe9db0fdfb43df9681cd2
     
     fileprivate var type:CutterType?
 
@@ -35,6 +44,10 @@ class ViewController: UITableViewController {
     
     fileprivate var is_circle:Bool = true
     
+<<<<<<< HEAD
+=======
+    fileprivate let cutterViewController:PhotoCutterViewController = PhotoCutterViewController()
+>>>>>>> 6e8313f475bfd6f5b92fe9db0fdfb43df9681cd2
     
     @IBOutlet weak var radius_field: UITextField!
     
@@ -80,7 +93,10 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+<<<<<<< HEAD
         let cutterViewController:PhotoCutterViewController = PhotoCutterViewController()
+=======
+>>>>>>> 6e8313f475bfd6f5b92fe9db0fdfb43df9681cd2
         if is_circle == true {
             cutterViewController.cutterType = CutterType.circle(radius: raduis)
         }else{
