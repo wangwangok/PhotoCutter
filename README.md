@@ -69,7 +69,7 @@ cutterViewController.isFilter = false
 ```
 
 ### 目前我在使用中遇到的问题
-如果出现```"no such module PhotoCutter"```时，可见![Getting error “No such module” using Xcode, but the framework is there](http://stackoverflow.com/questions/29500227/xcode-no-such-module-error-but-the-framework-is-there)；
+如果出现```"no such module PhotoCutter"```时，可见[Getting error “No such module” using Xcode, but the framework is there](http://stackoverflow.com/questions/29500227/xcode-no-such-module-error-but-the-framework-is-there)；
 
 
 
