@@ -80,7 +80,7 @@ public class PhotoCutterView: UIScrollView {
                 y: bounds.height/2)
             let startAngle: CGFloat = 0
             let radius_cg = CGFloat(radius) >= bounds.width ? bounds.width : CGFloat(radius)
-            let endAngle: CGFloat = CGFloat(M_PI) * CGFloat(2)
+            let endAngle: CGFloat = CGFloat(Double.pi) * CGFloat(2)
             let line_width = sqrt(pow(bounds.width/2, 2)+pow(bounds.height/2, 2))
             path = UIBezierPath(
                 arcCenter: center,

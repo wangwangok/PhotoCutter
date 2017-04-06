@@ -66,6 +66,10 @@ public final class PhotoFilterViewController: UIViewController {
     public override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
         return .portrait
     }
+    
+    deinit{
+        print("deinit")
+    }
 }
 
 private typealias PrivateFunction = PhotoFilterViewController
@@ -73,6 +77,10 @@ extension PrivateFunction{
     fileprivate func initializers()throws{
         if image == nil{
             throw PhotoFilterError.ControllerImageNone
+        }
+        view.backgroundColor = UIColor.black
+        if let navi = navigationController{
+            navi.setNavigationBarHidden(true, animated: true)
         }
         contentView = PFContentView(image: image)
         self.view.addSubview(contentView)

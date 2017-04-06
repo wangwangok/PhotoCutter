@@ -35,6 +35,8 @@ class ViewController: UITableViewController {
     
     fileprivate var is_circle:Bool = true
     
+    fileprivate var haveCutter:Bool = true
+    
     @IBOutlet weak var radius_field: UITextField!
     
     @IBOutlet weak var slider: UISlider!{
@@ -61,6 +63,10 @@ class ViewController: UITableViewController {
         radius_field.text = String(format: "%.0f", raduis)
     }
     
+    @IBAction func haveCutter(_ sender: UISwitch) {
+        haveCutter = sender.isOn
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -79,6 +85,14 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cutterImage = UIImage(named: contents[(indexPath as NSIndexPath).row])!
+        if haveCutter == false {
+            
+            let filterController:PhotoFilterViewController = PhotoFilterViewController()
+            filterController.image = cutterImage
+            self.navigationController?.pushViewController(filterController, animated: true)
+            return
+        }
         let cutterViewController:PhotoCutterViewController = PhotoCutterViewController()
         cutterViewController.delegate = PhotoCutterViewControllerDelegate()
         if is_circle == true {
@@ -86,7 +100,7 @@ class ViewController: UITableViewController {
         }else{
             cutterViewController.cutterType = CutterType.rect(width: rect_size.width, height: rect_size.height)
         }
-        let cutterImage = UIImage(named: contents[(indexPath as NSIndexPath).row])!
+        
         cutterViewController.image = cutterImage
         cutterViewController.isFilter = false
         self.navigationController?.pushViewController(cutterViewController, animated: true)
