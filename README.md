@@ -24,14 +24,22 @@
 let cutterViewController:PhotoCutterViewController = PhotoCutterViewController()
 ```
 
-* 2、传入数据源
+* 2、获取滤镜控制器
+滤镜控制类为```PhotoFilterCollectionViewCell```。使用方法为:
+```
+let filterController:PhotoFilterViewController = PhotoFilterViewController()
+filterController.image = cutterImage
+self.navigationController?.pushViewController(filterController, animated: true)
+```
+
+* 3、传入数据源
 数据源目前只支持传入```UIImage```类型的变量。设置方法如下：
 ```
 let cutterImage = UIImage(named: "IMG_1710.jpg")!
 cutterViewController.image = cutterImage
 ```
 
-* 3、获取裁剪完成数据
+* 4、获取裁剪完成数据
 获取剪切完成数据时，我们需要设置一个代理，如下：
 ```
 cutterViewController.delegate = PhotoCutterViewControllerDelegate()
@@ -48,7 +56,7 @@ closure中的```resultImage```便是我们需要的结果。
 
 可能你们会问为什么不直接在controller上使用closure，为什么非要添加一个delegate变量？第一、对于很多人来说使用delegate可能已经习惯了。第二、这里使用代理模式更符合场景需求。
 
-* 4、设置剪切形状
+* 5、设置剪切形状
 同时支持圆形裁剪和矩形裁剪（宽高可以是不等的），我们可以通过设置```cutterType```属性来设置裁剪的类型。
 ```
 public enum CutterType{
@@ -68,7 +76,7 @@ if is_circle == true {
 ```
 如果不对上面```cutterType```进行设置，那么默认值是```CutterType.circle(radius: 100)```。
 
-* 5、是否需要使用滤镜组件
+* 6、是否需要使用滤镜组件
 通过设置```isFilter```变量的值，来决定是否适用滤镜组件。该值默认是```true```。如果将该变量设置为```false```的话，在点击确认之后便会退回到上一次的界面。设置方法如下：
 ```
 cutterViewController.isFilter = false
