@@ -1,4 +1,5 @@
 # PhotoCutter
+![](https://img.shields.io/badge/build-passing-green.svg) ![](https://img.shields.io/badge/platform-iOS7.0%2B-green.svg) 
 ### 简介
 一款同时实现了QQ和微信头像裁剪的库，并可以自由调节大小宽度等等参数。具体效果可下载查看或者看下方效果图。
 ### 效果
